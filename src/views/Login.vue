@@ -1,5 +1,6 @@
 <template>
   <div class="Login">
+    <img class="img1" src="../../public/img/931d23e603591e9ed83e5dbbd85a2397.png" alt />
     <div class="login_container">
       <div class="login_box">
         <!-- 头像 -->
@@ -86,7 +87,6 @@ export default {
           // 1.将登陆成功之后的token保存到客户端的sessionStorage中
           // 1.1项目中除了登录之外的其他API接口，必须在登陆之后才能访问
           // 1.2token 只应在当前的网站打开期间生效，所以将token保存在sessionStorag中
-          console.log(res);
           window.sessionStorage.setItem("token", res.data.token);
           // 2.通过编程式导航跳转到后台主页，路由地址是/home
           this.$router.push("/Home");
@@ -101,6 +101,11 @@ export default {
 .Login {
   width: 100%;
   height: 100%;
+}
+
+.img1 {
+  width: 100%;
+  height: 966px;
 }
 .login_container {
   margin: 0;

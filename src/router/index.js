@@ -14,12 +14,25 @@ const routes = [
 		name: '/Login',
 		component: () => import('../views/Login')
 	},
-	//主页
+	//主页  redirect重定向
 	{
 		path: '/Home',
-		name: '/Home',
-		component: () => import('../views/Home')
-	}
+		component: () => import('../views/Home'),
+		redirect: "/Welcome",
+		children: [
+			{
+				path: '/Welcome',
+				component: () => import('../views/Welcome')
+			},
+			//用户users
+			{
+				path: '/users',
+				component: () => import('../views/Users')
+			},
+		]
+	},
+
+
 ]
 
 const router = new VueRouter({
