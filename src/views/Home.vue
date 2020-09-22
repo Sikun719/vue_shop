@@ -1,10 +1,11 @@
 <template>
   <div class="home">
+    <!-- 登录后的主页面 -->
     <el-container class="home_container">
       <!-- 头部区域 -->
       <el-header>
         <div>
-          <img class="img1" src="../../public/img/头像2.jpg" alt />
+          <img class="img1" src="../../public/img/头像4.jpg" alt />
           <span>电商后台管理系统</span>
         </div>
         <el-button type="danger" @click="logout">退出</el-button>

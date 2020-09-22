@@ -1,5 +1,6 @@
 <template>
   <div class="Login">
+    <!-- 登录页面 -->
     <img class="img1" src="../../public/img/931d23e603591e9ed83e5dbbd85a2397.png" alt />
     <div class="login_container">
       <div class="login_box">

@@ -24,11 +24,52 @@ const routes = [
 				path: '/Welcome',
 				component: () => import('../views/Welcome')
 			},
-			//用户users
+			//用户管理-用户列表
 			{
 				path: '/users',
 				component: () => import('../views/Users')
 			},
+			//权限管理-权限列表
+			{
+				path: '/rights',
+				component: () => import('../views/Rights')
+			},
+			//权限管理-角色列表
+			{
+				path: '/roles',
+				component: () => import('../views/Power')
+			},
+			//商品管理-商品分类
+			{
+				path: '/categories',
+				component: () => import('../views/Cart')
+			},
+			// 商品管理-分类参数
+			{
+				path: '/params',
+				component: () => import('../views/Params')
+			},
+			// 商品管理-商品列表
+			{
+				path: '/goods',
+				component: () => import('../views/List')
+			},
+			// 商品管理-商品添加
+			{
+				path: '/add',
+				component: () => import('../views/Add')
+			},
+			// 订单管理-订单列表
+			{
+				path: '/orders',
+				component: () => import('../views/Order')
+			},
+			// 数据统计-数据报表
+			{
+				path: '/reports',
+				component: () => import('../views/Report')
+			},
+
 		]
 	},
 
